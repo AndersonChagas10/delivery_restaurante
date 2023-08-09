@@ -50,7 +50,7 @@ public class JWTValidationFilter extends BasicAuthenticationFilter {
             return null;
         }
 
-    //Não precisamos da senha, pois o usuário já foi autenticado e o token é válido
+
         return new UsernamePasswordAuthenticationToken(username, null, new ArrayList<>());
     }
 }
